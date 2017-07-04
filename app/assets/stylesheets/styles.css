@@ -181,8 +181,38 @@ body .demo-blog {
           order: -1;
 }
 .demo-blog .coffee-pic .mdl-card__media {
-  background-image: url('images/coffee.jpg');
+/*  background-image: url('images/coffee.jpg'); */
 }
+
+#img1 {
+  background-image: url('images/prof1.jpg');   
+}
+
+#img2 {
+  background-image: url('images/prof2.jpg');   
+}
+
+#img3 {
+  background-image: url('images/prof3.jpg');   
+}
+
+#img4 {
+  background-image: url('images/prof4.jpg');   
+}
+
+#img5 {
+  background-image: url('images/prof5.jpg');   
+}
+
+#img6 {
+  background-image: url('images/prof6.jpg');   
+}
+
+#img7 {
+  background-image: url('images/prof7.jpg');   
+}
+
+
 .demo-blog .something-else .mdl-card__media {
   display: -webkit-flex;
   display: -ms-flexbox;

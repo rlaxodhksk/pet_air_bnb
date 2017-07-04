@@ -7,3 +7,5 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.create(email: "snu@likelion.org", password: "123456");
+
+Host.create(name: "Rocky Erdman", dog: 3, content: "best "

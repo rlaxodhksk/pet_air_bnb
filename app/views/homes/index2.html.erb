@@ -65,10 +65,12 @@
       <main class="mdl-layout__content">
         <div class="demo-blog__posts mdl-grid">
 
+     <% for i in 1..7%>
+
 	    <!-- Grid Start -->
 
-          <div class="mdl-card coffee-pic mdl-cell mdl-cell--8-col" style="width:250px">
-            <div class="mdl-card__media mdl-color-text--grey-50">
+          <div class="mdl-card coffee-pic mdl-cell mdl-cell--8-col" style="width:260px;">
+            <div class="mdl-card__media mdl-color-text--grey-50" id="img<%=i%>">
               <h3><a href="entry.html">Coffee Pic</a></h3>
             </div>
             <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
@@ -80,43 +82,8 @@
             </div>
           </div>
 
-	    <!-- Grid End -->
-
-	    <!-- Grid Start -->
-
-          <div class="mdl-card coffee-pic mdl-cell mdl-cell--8-col" style="width:250px">
-            <div class="mdl-card__media mdl-color-text--grey-50">
-              <h3><a href="entry.html">Coffee Pic</a></h3>
-            </div>
-            <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
-              <div class="minilogo"></div>
-              <div>
-                <strong>The Newist</strong>
-                <span>2 days ago</span>
-              </div>
-            </div>
-          </div>
-
-	    <!-- Grid End -->
-
-
-
-	    <!-- Grid Start -->
-
-          <div class="mdl-card coffee-pic mdl-cell mdl-cell--8-col" style="width:250px">
-            <div class="mdl-card__media mdl-color-text--grey-50">
-              <h3><a href="entry.html">Coffee Pic</a></h3>
-            </div>
-            <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
-              <div class="minilogo"></div>
-              <div>
-                <strong>The Newist</strong>
-                <span>2 days ago</span>
-              </div>
-            </div>
-          </div>
-
-	    <!-- Grid End -->
+	  <!-- Grid End -->
+      <% end %>
 
           <div class="mdl-card something-else mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop">
             <button class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--fab mdl-color--accent">
