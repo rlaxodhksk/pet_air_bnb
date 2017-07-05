@@ -59,25 +59,59 @@
       z-index: 900;
     }
     </style>
+ <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+
+
+<!-- content filter start-->
+
+<meta charset="UTF-8">                                                                                          
+<meta name="viewport" content="width=device-width, initial-scale=1">                                            
+                                                                                                                
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'> 
+                                                                                                                
+<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->                                                 
+<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->                                            
+<script src="js/modernizr.js"></script> <!-- Modernizr -->                                                      
+
+<!-- content filter end -->
+
   </head>
   <body>
+
+
+<nav>
+    <div class="nav-wrapper" style="height:70px; background-color:black; opacity:0.5">
+      <a href="#" class="brand-logo" style="padding-top:4px; padding-left:5px"> &nbsp<img width="30%" src="/fetch_logo.png"> </a>
+      <div style="padding-top:19px">
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">JavaScript</a></li>
+      </ul>
+      </div>
+    </div>
+  </nav>
+        
+
+
+
     <div class="demo-blog mdl-layout mdl-js-layout has-drawer is-upgraded">
       <main class="mdl-layout__content">
         <div class="demo-blog__posts mdl-grid">
 
-     <% for i in 1..7%>
-
+    <% Host.all.each do |h| %>
 	    <!-- Grid Start -->
 
           <div class="mdl-card coffee-pic mdl-cell mdl-cell--8-col" style="width:260px;">
-            <div class="mdl-card__media mdl-color-text--grey-50" id="img<%=i%>">
-              <h3><a href="entry.html">Coffee Pic</a></h3>
+            <div class="mdl-card__media mdl-color-text--grey-50" id="img<%=h.id%>">
+              <h3><a href="entry.html"> <%= h.name%> </a></h3>
             </div>
             <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
               <div class="minilogo"></div>
               <div>
-                <strong>The Newist</strong>
-                <span>2 days ago</span>
+                <strong> <%= h.city %> </strong>
+                <span>has <%=h.dog%> pets</span>
               </div>
             </div>
           </div>

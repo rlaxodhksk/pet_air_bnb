@@ -8,4 +8,13 @@
 
 User.create(email: "snu@likelion.org", password: "123456");
 
-Host.create(name: "Rocky Erdman", dog: 3, content: "best "
+for i in 1..50 do
+    Host.create(
+	name: Faker::Name.name,
+	age: Faker::Number.between(10, 40),
+	gender: ["male", "female"].sample,
+	city: Faker::Address.city,
+	career: Faker::Number.between(1,7),
+	dog: Faker::Number.between(0,5)
+    )
+end

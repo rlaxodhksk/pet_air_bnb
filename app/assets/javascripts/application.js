@@ -12,5 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+
+//= require js/jquery-2.1.1
+//= require js/jquery.mixitup.min
+//= require js/main
+//= require js/modernizr
+
 //= require_tree .
